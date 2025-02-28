@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body-index{
+    background-image: url(https://zenicainfo.ba/wp-content/uploads/2018/03/Zenica1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+nav a img{
+    width: 100px;
+}
+.nav-index {
+    opacity: 0.7;
+    display: flex;
+    padding: 1% 6%;
+    align-items: center;
+    justify-content: space-between; /*da bude ova slika lijevo a tekst div desno */
+    background-color:  #e6e6e6    ;
+    height: 100px;
+    border: 1px solid #937436;
+
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+    
+}
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+}
+.nav-links ul li a{
+    text-decoration: none; /* da mi nema linija ispod linkova */
+    color: #006600;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #cc8800;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+.nav-links ul li:hover::after {
+    width:100%;
+    
+}
+ .h1-index{
+    color: white;
+    text-align: center;
+    font-size: 65px;
+    padding-top: 10%;
+ }
+ p{
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    background-color: rgb(161, 161, 90);
+    opacity: 0.7;
+ }
+
+ /* --------Povijest-----------*/
+
+.povijest-body {
+    background-color: white;
+    text-align: left;
+    
+}
+.povijest-nav{
+    opacity: 0.7;
+    display: flex;
+    padding: 1% 6%;
+    align-items: center;
+    justify-content: space-between; /*da bude ova slika lijevo a tekst div desno */
+    background-color: #98be98;
+    height: 100px;
+    border: 1px solid #cc8800;
+}
+.povijest-h1{
+    color: black;
+    padding-left: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
+.povijest-p{
+    color: black;
+    font-size: 15px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    text-align:justify;
+    background-color: white;
+    margin-bottom: 50px;
+
+}
+.povijest-img {
+    width: 900px;
+    height: 500px;
+    padding: 5px 300px 50px;
+    text-align: center;
+    align-content: center;
+
+}
+
+#povijest-footer{
+    padding-bottom: 5px;
+    background-color: rgb(181, 184, 181);
+    padding-top: 5px;
+}
+#povijest-footer a{
+    color: darkblue;
+    text-decoration: none;
+}
