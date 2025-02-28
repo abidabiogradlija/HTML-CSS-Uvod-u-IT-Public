@@ -1,0 +1,57 @@
+body{
+background-color: black;
+color: white;
+margin: 0;
+}
+/* ZAGLAVLJE */
+.header{
+    width: 70%;
+    height: 150px;
+    margin-top: 0px;
+    padding-left: 100px;
+}
+/* GLAVNI DIO - moja slika i tekst o meni */
+.main{
+    height: 420px;
+    display: block;
+}
+.main-slika{
+    width: 50%;
+    display: block;
+    float: left;
+    padding-top: 20px;
+}
+
+.main img{
+    padding-left: 400px;
+}
+.main-tekst{
+    width: 35%;
+    display: block;
+    float: left;
+    padding-top: 100px;
+    padding-left: 30px;
+    text-align: justify;
+}
+.dugme{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    padding: 12px 35px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.dugme:hover {
+    border: 3px solid black;
+    background: white;
+    color: black;
+    transition: 1s;
+}
+/*  PODNOŽJE  */
+.footer{
+    padding-top: 100px;
+    text-align: center;
+}
