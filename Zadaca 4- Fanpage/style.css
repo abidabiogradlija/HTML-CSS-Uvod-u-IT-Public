@@ -1,0 +1,626 @@
+
+ body{
+    background-color: #f2f2f2    ;
+    color: black;
+    margin: 0;
+    height: 100%;
+    }
+ .header {
+        justify-content: left;
+        width: 30%;
+        margin-left: 0;
+        margin-top: 0px;
+        padding-left: 150px;
+        color: gray;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+       
+    }
+    
+    .header h1 {
+        color: black;
+        margin-bottom: auto; 
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+    
+    /* GLAVNI DIO */ 
+    
+    .main {
+        border-top: 2px solid #00664d ;
+        height: 470px;
+        display: flex;
+    }
+    
+    .main-slika {
+        margin-left: 12%;
+        width: 40%;
+        padding-top: 40px;        
+    }
+    
+    .main img {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15%;       
+    }
+    
+    .main-tekst {
+        width: 35%;
+        padding-top: 150px; 
+        padding-left: 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dugme {
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+        border: 3px solid gray;
+        padding: 12px 35px;
+        font-size: 13px;
+        background: transparent;
+        cursor: pointer;
+    }
+    
+    .dugme:hover {
+        border: 3px solid #333333;
+        background: #333333;
+        color: white;
+        transition: 1s;
+    }
+    
+    /* PODNOŽJE */
+    .footer {
+        position: absolute;
+        bottom: 0;
+        background-color: #d9d9d9;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    
+    
+/*BIOGRAFIJA*/ 
+
+.navigacija{
+    height: 100px;
+    justify-content: space-between;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+
+}
+.navigacija img{
+    padding-left: 100px;
+}
+.navigacija a{
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #00664d;
+    font-weight: bolder;
+    height: 100%;
+    text-align: center;
+}
+.navigacija .text{
+    padding-top: 40px;   
+    text-align: center;
+    margin-left: 50px;
+    padding-left: 10px;
+    padding-right: 20px;
+
+}
+.navigacija .text:hover{
+    background-color: wheat;
+    color: #00664d    ;
+    padding-top: 10px;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+
+}
+
+.navigacija img{
+    height: 100px;
+    width: 100px;
+}
+.navigacija .pretrazivanje{
+    float: right;
+    margin-top: 30px;
+}
+.navigacija input{
+    font-size: 17px;
+    border: 1px solid #00664d;
+    padding: 6px;
+    margin-right: 0px;
+    color: #00664d;
+
+}
+.navigacija button{
+    padding: 6px;
+    border: none;
+    background-color: white;
+    font-size: 17px;
+    margin-left: 0px;
+    margin-right: 5px;
+
+    cursor: pointer;
+}
+.navigacija button:hover{
+    background-color: #00664d;
+}
+.main-biografija{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: block;
+    width: 88%;
+    height: 820px;
+    margin-bottom: 5%;
+   
+
+}
+.lijevo-slika{
+    width: 44%;
+    display: block;
+    float: left;
+}
+.desno-tekst{
+    font-size: large;
+    display: block;
+    float: right;
+    width: 44%;
+    text-align: justify;
+}
+.slike-margine{
+    padding-top: 50px;
+    padding-left: 50px ;
+}
+.footer-biografija{
+    margin-top: 30px;
+    padding-left: 10%;
+    padding-top: 60px;
+    height: 50px;
+    font-size: 20px;
+}
+/*----------------------------------------------OVDJE KREĆE MEDIA------------------------------------------------*/
+@media only screen and (max-width: 500px) {
+    /* BIOGRAFIJA */
+  
+.navigacija {
+        height: auto; 
+        justify-content: center; 
+        display: block;
+        float: none; 
+    }
+
+.navigacija img {
+        padding-left: 30px;
+        float: none; 
+        height: 100px;
+        width: 100px;
+    }
+
+.navigacija a {
+        float: none; 
+        margin-top: 10px; 
+    }
+
+.navigacija .text {
+        float: none; 
+        padding-top: 20px;
+        text-align: center;
+        margin-left: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+   
+.navigacija .pretrazivanje {
+        float: none;
+        margin-top: 10px;
+        text-align: center; 
+    }
+
+.navigacija input {
+        width: 100%; 
+        margin-right: 0; 
+
+    }
+
+.navigacija button {
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+.footer-biografija {
+        display: block;
+        padding-left: 10px;
+        float: none;
+        margin-top: 1050px;
+        background-color: transparent;
+    }
+.main-biografija{
+        margin-top: 3%;
+        margin-left: 5px;
+        display: block;
+        float: none;
+        width: 100%;
+        margin-bottom: 5%;
+    
+    }
+.lijevo-slika{
+        width: 44%;
+        display: block;
+        float: none;
+    }
+.desno-tekst{
+        padding-left: 5px;
+        padding-right: 10px;
+
+        width: fit-content;
+        display: block;
+        float: none;
+        text-align: justify;
+    }
+.slike-margine{
+        padding-top: 5px;
+        padding-left: 0px ;
+    }
+    /*INDEX.HTML*/
+.header {
+        width: 100%;
+        padding-left: 10px;
+        align-items: center;
+    }
+
+.header h1 {
+        margin-bottom: 10px;
+    }
+
+.main {
+        
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+.main img{
+        padding-left: 0px;
+    }
+
+.main-slika {
+        width: 100%;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+.main-tekst {
+        width: 100%; 
+        padding-top: 20px;
+        justify-content: center;
+
+    }   
+}
+@media only screen and (min-width: 501px) and (max-width: 900px){
+/* BIOGRAFIJA */
+  
+.navigacija {
+    height: auto; 
+    justify-content: center; 
+    display: block;
+    float: none; 
+}
+
+.navigacija img {
+    padding-left: 30px;
+    float: none; 
+    height: 100px;
+    width: 100px;
+}
+
+.navigacija a {
+    float: none; 
+    margin-top: 10px; 
+}
+
+.navigacija .text {
+    float: none; 
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navigacija .pretrazivanje {
+    float: none;
+    margin-top: 10px;
+    text-align: center; 
+}
+
+.navigacija input {
+    width: 100%; 
+    margin-right: 0; 
+
+}
+
+.navigacija button {
+    width: 100%; 
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footer-biografija {
+    display: block;
+    padding-left: 10px;
+    float: none;
+    margin-top: 700px; 
+    position: absolute;
+    background-color: transparent;
+}
+.main-biografija{
+    margin-top: 3%;
+    margin-left: 5px;
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 5%;
+
+}
+.lijevo-slika{
+    width: 44%;
+    display: block;
+    float: none;
+}
+.desno-tekst{
+    padding-left: 5px;
+    padding-right: 10px;
+
+    width: fit-content;
+    display: block;
+    float: none;
+    text-align: justify;
+}
+.slike-margine{
+    padding-top: 5px;
+    padding-left: 0px ;
+}
+/*INDEX.HTML*/
+.header {
+    width: 100%;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.main {
+    
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.main img{
+    padding-left: 0px;
+}
+
+.main-slika {
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.main-tekst {
+    width: 100%; 
+    padding-top: 20px;
+    justify-content: center;
+
+} 
+}
+@media (min-width: 901px){
+    body{
+        background-color: #f2f2f2    ;
+        color: black;
+        margin: 0;
+        height: 100%;
+        }
+     .header {
+            justify-content: left;
+            width: 30%;
+            margin-left: 0;
+            margin-top: 0px;
+            padding-left: 150px;
+            color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+           
+        }
+        
+        .header h1 {
+            color: black;
+            margin-bottom: auto; 
+            justify-content: left;
+            margin-bottom: 20px;
+        }
+        
+        /* GLAVNI DIO */
+        .main {
+            border-top: 2px solid #00664d ;
+            height: 470px;
+            display: flex;
+        }
+        
+        .main-slika {
+            margin-left: 12%;
+            width: 40%;
+            padding-top: 40px;        
+        }
+        
+        .main img {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15%;       
+        }
+        
+        .main-tekst {
+            width: 35%;
+            padding-top: 150px; 
+            padding-left: 20px;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .dugme {
+            margin-top: 10px;
+            text-decoration: none;
+            color: black;
+            border: 3px solid gray;
+            padding: 12px 35px;
+            font-size: 13px;
+            background: transparent;
+            cursor: pointer;
+        }
+        
+        .dugme:hover {
+            border: 3px solid #333333;
+            background: #333333;
+            color: white;
+            transition: 1s;
+        }
+        
+        /* PODNOŽJE */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            background-color: #d9d9d9;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        
+        
+    /*BIOGRAFIJA*/ 
+    .navigacija{
+        height: 100px;
+        justify-content: space-between;
+        width: 100%;
+        display: block;
+        text-align: center;
+        background-color: white;
+        overflow: hidden;
+    
+    }
+    .navigacija img{
+        padding-left: 100px;
+    }
+    .navigacija a{
+        display: block;
+        float: left;
+        text-decoration: none;
+        color: #00664d;
+        font-weight: bolder;
+        height: 100%;
+        text-align: center;
+    }
+    .navigacija .text{
+        padding-top: 40px;   
+        text-align: center;
+        margin-left: 50px;
+        padding-left: 10px;
+        padding-right: 20px;
+    
+    }
+    .navigacija .text:hover{
+        background-color: wheat;
+        color: #00664d    ;
+        padding-top: 10px;
+        height: 30px;
+        margin-top: 30px;
+        border-radius: 5px;
+    
+    }
+    
+    .navigacija img{
+        height: 100px;
+        width: 100px;
+    }
+    .navigacija .pretrazivanje{
+        float: right;
+        margin-top: 30px;
+    }
+    .navigacija input{
+        font-size: 17px;
+        border: 1px solid #00664d;
+        padding: 6px;
+        margin-right: 0px;
+        color: #00664d;
+    
+    }
+    .navigacija button{
+        padding: 6px;
+        border: none;
+        background-color: white;
+        font-size: 17px;
+        margin-left: 0px;
+        margin-right: 5px;
+    
+        cursor: pointer;
+    }
+    .navigacija button:hover{
+        background-color: #00664d;
+    }
+    .main-biografija{
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: block;
+        width: 88%;
+        height: 820px;
+        margin-bottom: 5%;
+       
+    
+    }
+    .lijevo-slika{
+        width: 44%;
+        display: block;
+        float: left;
+    }
+    .desno-tekst{
+        font-size: large;
+        display: block;
+        float: right;
+        width: 44%;
+        text-align: justify;
+    }
+    .slike-margine{
+        padding-top: 50px;
+        padding-left: 50px ;
+    }
+    .footer-biografija{
+        margin-top: 30px;
+        padding-left: 10%;
+        padding-top: 60px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
